@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-          content="Temukan undangan pernikahan simpel, menarik, dan kekinian untuk hari istimewa Anda.">
+          content="Wedding Diky - Nisa; Design & Development BY Nida">
     <meta name="keywords"
           content="undangan pernikahan, template undangan, wedding invitation, desain undangan pernikahan, contoh undangan pernikahan HTML, CSS, JavaScript">
     <meta name="author" content="Sandi Perdiansah">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Wedding Invitation - Temukan Undangan Pernikahan Simpel dan Kekinian">
+    <meta property="og:title" content="Wedding Diky - Nisa; Design & Development BY Nida">
     <meta property="og:description"
-          content="Temukan undangan pernikahan simpel, menarik, dan kekinian untuk hari istimewa Anda.">
+          content="Wedding Diky - Nisa; Design & Development BY Nida">
     <meta property="og:image"
           content="https://sandiperdiansah.github.io/wedding-invitation/src/assets/images/couple.png">
     <meta property="og:url" content="https://sandiperdiansah.github.io/wedding-invitation">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Wedding Invitation - Temukan Undangan Pernikahan Simpel dan Kekinian">
+    <meta property="twitter:title" content="">
     <meta property="twitter:description"
           content="Temukan undangan pernikahan simpel, menarik, dan kekinian untuk hari istimewa Anda.">
     <meta property="twitter:image"
@@ -56,7 +56,58 @@
     <link rel="stylesheet" href="src/css/footer.css">
     <link rel="stylesheet" href="src/css/mediaQueries.css">
 
-    <title>wedding - invitation</title>
+    <title>Diky - Nisa</title>
+    <style>
+    .timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 700px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #333;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 15px;
+  height: 15px;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  left: 13px;
+  top: 5px;
+}
+
+.timeline-content {
+  margin-left: 50px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+</style>
 </head>
 <body>
 
@@ -150,6 +201,39 @@
         <i class="bx bx-heart" aria-hidden="true"></i>
     </section>
 
+    <section class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3>Pertemuan; 25 juli 2025 </h3>
+      <p>Didunia yang luas ini,kami percaya bahwa tida ada pertemuan yang benar benar kebetulan semua sudah tersusun rapih oleh sang maha kuasa, 
+Kita tida bisa memilih kepada siapa kita harus jatuh cinta,krna pertemuan itu menjadi cinta suci yg kini terikat
+Tuhan mempertemukan dua hati pada waktu yg tepat
+</p>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3>Kedekatan</h3>
+      <p>Perjalanan kami mungkin sangat singkat kami dimulai dari sapa sederhana yg membawa kehangatan 
+waktu demi waktu kami belajar tentang arti cinta,tentang menerima,memahami dan tumbuh bersama</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3>Komitmen</h3>
+      <p>Karna kehendaknya kini kami memilih untuk melangkah ke tahap yg lebih serius 
+fase baru 
+menyatukan dua hati dalam satu tujuan dan satu doa
+inilah sepenggal kisah cinta kami yang kami bagikan dengan penuh syukur dan sukacita</p>
+    </div>
+  </div>
+</section>
+
     <section class="galeri" id="galeri" aria-labelledby="galeri-title">
         <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h2 id="galeri-title">Galeri</h2>
@@ -172,6 +256,8 @@
         </div>
         <i class="bx bx-heart" aria-hidden="true"></i>
     </section>
+    
+
 
     <section class="wishas" id="wishas">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" aria-hidden="true">
@@ -249,15 +335,34 @@
     <h2>Wassalamualaikum Warahmatullahi Wabarakatuh</h2>
     <h4> اَلْحَمْدُ للَّهِ رَبِّ الْعالَمِينَ</h4>
     <div>
-        <p>Build with <span>Sandi Perdiansah</span></p>
+        <p>Build with <span>Nida Hanifah</span></p>
         <a href="https://github.com/sdprdh">
             <i class="bx bxl-github"></i>
-            <span>sandiperdiansah</span>
+            <span>nidahanifah</span>
         </a>
     </div>
 </footer>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="src/main.js" type="module"></script>
+<script>document.addEventListener("DOMContentLoaded", () => {
+  // ambil data dari data.js
+  const galeriData = data.galeri; // pastikan data.js sudah di-load dulu
+  const galeriBox = document.querySelector(".galeri figure");
+
+  galeriData.forEach(item => {
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("img-wrapper");
+    wrapper.style.setProperty("--bg", `url(${item.image})`);
+
+    const img = document.createElement("img");
+    img.src = item.image;
+    img.alt = `foto ${item.id}`;
+
+    wrapper.appendChild(img);
+    galeriBox.appendChild(wrapper);
+  });
+});
+</script>
 </body>
 </html>
