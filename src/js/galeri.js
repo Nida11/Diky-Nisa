@@ -80,22 +80,4 @@ export const galeri = () => {
         })
     })
 };
-document.addEventListener("DOMContentLoaded", () => {
-  // ambil data dari data.js
-  const galeriData = data.galeri; // pastikan data.js sudah di-load dulu
-  const galeriBox = document.querySelector(".galeri figure");
-
-  galeriData.forEach(item => {
-    const wrapper = document.createElement("div");
-    wrapper.classList.add("img-wrapper");
-    wrapper.style.setProperty("--bg", `url(${item.image})`);
-
-    const img = document.createElement("img");
-    img.src = item.image;
-    img.alt = `foto ${item.id}`;
-
-    wrapper.appendChild(img);
-    galeriBox.appendChild(wrapper);
-  });
-});
 
